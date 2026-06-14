@@ -79,7 +79,7 @@ Some ideas for skills that would fit this collection (feel free to claim one):
 
 ## License
 
-*(Add a license — e.g. MIT — if you intend this to be open source.)*
+MIT — see [LICENSE](LICENSE).
 
 ## Disclaimer
 
