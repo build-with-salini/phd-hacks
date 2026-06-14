@@ -1,0 +1,55 @@
+{
+  "skill_name": "phd-presentation-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have my 6-month PhD progress report meeting with my supervisors next week and I need to turn this into slides. Here's the raw text:\n\nTitle: Federated Learning with Differential Privacy for Medical Imaging\nStudent: Jane Doe, Year 2, Supervisor: Prof. Smith\n\nObjectives: (1) Design a privacy-preserving FL framework for multi-hospital CT scan datasets. (2) Achieve <1% accuracy degradation vs centralized training. (3) Formal DP guarantee with epsilon < 1.0.\n\nWork done: Implemented FedAvg baseline across 4 hospital silos (each ~12k scans). Added Gaussian mechanism for DP. Current results: central accuracy 94.2%, federated with DP accuracy 92.8% (epsilon=0.8). Compared against FedProx and SCAFFOLD.\n\nChallenges: non-IID data distribution across hospitals causing 3-4% accuracy drop before DP. Communication rounds converging slowly (need 200+ rounds).\n\nNext 6 months: Q3 - adaptive clipping. Q4 - submit to NeurIPS workshop. Q1 next year - full journal paper.",
+      "expected_output": "A complete slide deck layout with executive arc table, 10-12 slides with two-column/panel layouts, LaTeX math notation for DP epsilon bounds and loss functions, UI/UX hints on every slide, bold scanning anchors on bullets, and a three-panel End Slide dashboard with status matrix, 6-month timeline, and closing anchor thesis statement.",
+      "files": [],
+      "expectations": [
+        "Output includes an Executive Slide Outline table before the full deck",
+        "LaTeX notation used for epsilon ($\\epsilon$) and the DP guarantee expression",
+        "At least one slide uses a two-column layout (e.g., methodology left, results table right)",
+        "Every slide has a UI Hint or UX Hint field",
+        "All bullet points start with a bold keyword anchor",
+        "Final slide is a 'Future Milestones & Research Horizon' dashboard, not 'Thank You' or 'Questions'",
+        "End slide includes a status matrix with Completed/In Review/Pending items",
+        "End slide includes a 3-6 month timeline panel",
+        "End slide includes a closing anchor block with a one-sentence thesis statement",
+        "Accuracy metrics (94.2%, 92.8%) appear on a results slide with comparative context"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Help me make slides for my committee meeting. I'm doing research on graph neural networks for drug discovery. My main contribution is a new message-passing scheme called HierGNN that handles molecular hierarchy (atom → functional group → ring system). Results: 15.3% improvement on BBBP benchmark over AttentiveFP, 8.7% on Tox21. I'm in year 3, need to show I'm on track for submission in 18 months. I haven't written the intro or lit review yet, just give me the slides based on what I have.",
+      "expected_output": "Structured slide deck with arc table, title slide, research overview, objectives slide, methodology slide with HierGNN architecture described in column layout with diagram hints, results slide with benchmark comparison table and bold metric anchors, and the End Slide Protocol dashboard with 18-month thesis submission visible in the timeline.",
+      "files": [],
+      "expectations": [
+        "Executive arc table is presented first",
+        "Methodology slide describes the three-level hierarchy (atom, functional group, ring system) with a diagram/flowchart UI hint",
+        "Results slide uses a comparison table format (HierGNN vs. AttentiveFP and other baselines)",
+        "Percentage improvements (15.3%, 8.7%) appear with bold anchor formatting",
+        "LaTeX used for the message-passing update rule or aggregation function",
+        "End slide timeline includes the 18-month thesis submission milestone",
+        "End slide closing anchor thesis statement references HierGNN and drug discovery",
+        "No slide is a plain bullet list — at least one column or panel layout per content slide"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "can you make a research presentation for me? im presenting my llm work to my supervisor tomorrow. basically i fine-tuned llama 3.1 8b on a dataset of 50k clinical notes to do named entity recognition for medications and dosages. got 91.4 F1 on test set vs 84.2 for the base model. still struggling with rare drug names and negation handling. next step is to add a retrieval augmented component to handle rare entities.",
+      "expected_output": "Quick but complete slide deck for an informal supervisor meeting — fewer slides than a full committee report (6-8 range), with all UI/UX Pro Max principles applied and the End Slide Protocol for the final slide.",
+      "files": [],
+      "expectations": [
+        "Output includes an executive arc table",
+        "F1 scores (91.4 and 84.2) appear with bold anchors and LaTeX $F_1$ notation",
+        "A slide covers the fine-tuning methodology with the dataset size (50k) highlighted",
+        "Challenges slide or section explicitly mentions rare drug names and negation handling",
+        "Future work slide or section mentions the RAG component for rare entities",
+        "Final slide is the End Slide dashboard (not Thank You or Questions)",
+        "Despite casual user input, tone of output is rigorous and academic",
+        "At least one slide has a two-column or panel layout"
+      ]
+    }
+  ]
+}
