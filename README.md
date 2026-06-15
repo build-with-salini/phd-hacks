@@ -11,6 +11,7 @@ Each skill lives in its own top-level folder and contains a `SKILL.md` file (plu
 | Skill | Description |
 |---|---|
 | `phd-presentation-architect/` | Helps structure and design academic presentations (conference talks, defenses, lab meetings). |
+| `translate-bm-academic/` | Helps in academic translation |
 | *(add more here as you create them)* | |
 
 ## Repository structure
